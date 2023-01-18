@@ -7,6 +7,7 @@
     --grey-txt-cl:#8E8F99;
     --accent-txt-cl:#E7E9FC;
     --light-txt-cl:#F4F4FD;
+    --white-txt-cl: #FFFFFF;
 
     --success:#31D0AA;
     --success-75:rgba(49, 208, 170, 0.75);
@@ -21,7 +22,7 @@ body{
 }
 /* header */
 .header{
-    background-color:white;
+    background-color:var(--white-txt-cl);
 }
 .logo{
     text-decoration: none;
@@ -35,31 +36,33 @@ body{
 }
 .navigation{
     text-decoration: none;
-    width: 48px;
-height: 24px;
-font-family: 'Roboto';
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--dark-txt-cl);
 }
+.portfolio{
+    color: var(--focused-txt-cl);
+}
+.studio{
+    color: var(--focused-txt-cl);
+}
 .navigation:focus{
     color: var(--focused-txt-cl);
 }
 .navigation:hover{
-    color: var(--main-txt-cl);
+    color:var(--focused-txt-cl);
+}
+.navigation-general{
+    list-style-type: none;
 }
 .contacts{
     text-decoration: none;
-    width: 153px;
-height: 24px;
-left: 940px;
-top: 24px;
-font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 color:var(--main-txt-cl);
+font-style: normal;
 }
 .contacts:hover{
     color: var(--focused-txt-cl);
@@ -67,30 +70,31 @@ color:var(--main-txt-cl);
 .contacts:focus{
     color: var(--focused-txt-cl);
 }
+.contacts-general{
+    list-style-type: none;
+}
 /* Studio Main Page */
 /* section 1 */
 .title{
-    width: 494px;
-height: 120px;
-left: 473px;
-top: 260px;
-font-family: 'Roboto';
 font-weight: 700;
 font-size: 56px;
 line-height: 1.1;
 text-align: center;
 letter-spacing: 0.02em;
-color: #FFFFFF;
+color: var(--white-txt-cl);
 }
 .button-main{
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
     width: 169px;
 height: 56px;
 left: 636px;
 top: 428px;
-background: #4D5AE5;
+background: var(--focused-txt-cl);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-color: #FFFFFF;
+color: var(--white-txt-cl);
 cursor: pointer;
 }
 .banner{
@@ -153,8 +157,6 @@ color:var(--accent-txt-cl);
 
 /* Portfolio Main Page */
 .navigation-btn{
-    width: 116px;
-height: 48px;
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
@@ -168,12 +170,12 @@ color: var(--focused-txt-cl);
 }
 .navigation-btn:hover{
 background-color: var(--focused-txt-cl);
-color:white;
+color:var(--white-txt-cl);
 cursor: pointer;
 }
 .navigation-btn:focus{
 background-color: var(--focused-txt-cl);
-color: white;
+color: var(--white-txt-cl);
 cursor: pointer;
 }
 .service-title{
