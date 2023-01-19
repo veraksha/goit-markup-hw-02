@@ -86,16 +86,15 @@ color: var(--white-txt-cl);
 .button-main{
     font-weight: 500;
 font-size: 16px;
-line-height: 24px;
+line-height: 1.5;
     width: 169px;
 height: 56px;
-left: 636px;
-top: 428px;
 background: var(--focused-txt-cl);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 color: var(--white-txt-cl);
 cursor: pointer;
+font-family:inherit;
 }
 .banner{
     background-color: var(--dark-txt-cl);
@@ -157,7 +156,7 @@ color:var(--accent-txt-cl);
 
 /* Portfolio Main Page */
 .navigation-btn{
-background: #F4F4FD;
+background: var(--accent-txt-cl);
 border: 1px solid #E7E9FC;
 border-radius: 4px;
 font-weight: 500;
